@@ -3672,7 +3672,7 @@
 
 			#contact > .inner > :nth-child(2n) {
 				padding-left: 3em;
-				width: 40%;
+				width: 80%;
 			}
 
 			#contact > .inner > .split {
@@ -3680,7 +3680,7 @@
 			}
 
 				#contact > .inner > .split > * {
-					padding: 3em 0 1em 3em ;
+					padding: 1em 0 1em 3em ;
 					position: relative;
 				}
 

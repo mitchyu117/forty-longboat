@@ -1,3 +1,13 @@
+<style>
+    .scaled {
+        transform: scale(0.8);
+
+    }
+
+</style>
+
+
+
 <html>
 {{ "<!-- Header -->" | safeHTML }}
     {{ partial "header.html" . }}
@@ -41,7 +51,13 @@
                                 </header>
                                 <p>{{ .Description }}</p>
                                 <ul class="actions">
-                                    <li><a href="{{ .Permalink }}" class="button">Learn more</a></li>
+                                    <li><a href="{{ .Permalink }}" class="button">
+                                        {{ if eq .Section "team" }}
+                                        Meet >
+                                        {{ else }}
+                                        Explore >
+                                        {{ end }}
+                                    </a></li>
                                 </ul>
                             </div>
                         </div>

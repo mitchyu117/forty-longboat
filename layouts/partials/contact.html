@@ -1,9 +1,12 @@
 {{ "<!-- Contact -->" | safeHTML}}
+
+
+{{ "<!-- Contact -->" | safeHTML}}
     <section id="contact">
         <div class="inner">
             <section>
                 {{ if .Site.Params.Contact.enable }}
-                <iframe src=" {{ .Site.Params.Contact.ncformurl }}"height="90%"width="90%"title="contact"></iframe>
+                <iframe src=" {{ .Site.Params.Contact.ncformurl }}"height="500px"width="105%"title="contact" float="left"></iframe>
                 {{ end }}
             </section>
             <section class="split">
@@ -25,9 +28,8 @@
                         {{ end }}
                     </div>
                 </section>
-                <section>
-                    </br>
-                </section>
             </section>
         </div>
     </section>
+
+    
