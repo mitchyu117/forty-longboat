@@ -3,11 +3,13 @@
     {{ if eq .shortname $resume}}
         <style>
             .lbcenter {
+                
                 margin-left:auto;
                 margin-right:auto;
                 text-align: center;
                 border: 2px solid #FFFFFF;
                 width: 50%;
+                font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
             }
             .icons1{
                 float: right
@@ -15,7 +17,7 @@
         </style>
         <header class="lbcenter">
             </br> 
-            <h2>{{ $.Title}}</h2>
+            <u><h2>{{ $.Title}}</h2></u>
             <h4>{{ .title }}</h4>
             </br>
         </header>
@@ -28,7 +30,7 @@
                         /- Projects.</h3></u>
                     <ul>
                         {{ range .projectroles}}
-                            <li> {{ . }}</li>
+                            <li>{{ . }}</li>
                         {{ end }}
                     </ul>
                     <u><h3>/- Skills.</h3></u>

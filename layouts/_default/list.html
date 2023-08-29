@@ -1,6 +1,6 @@
 <style>
     .scaled {
-        transform: scale(0.8);
+        transform: scale(0.5);
 
     }
 
@@ -42,7 +42,7 @@
                     {{ range .Pages }}
                     <section>
                         <a href="{{ .Permalink }}" class="image">
-							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
+							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" {{ if eq .Section "team" }} class="scaled" {{ end }} />
 						</a>
                         <div class="content">
                             <div class="inner">

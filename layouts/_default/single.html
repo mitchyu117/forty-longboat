@@ -1,6 +1,21 @@
 <!DOCTYPE HTML>
 <html>
+    <style>
+        .main1{
+            margin:auto;
+            width:"100%";
+            padding:50px;
+            display: inline-block;
 
+
+        }
+        .main1 img{
+            display:block;
+            width:60%;
+            margin:auto;
+
+        }
+    </style>
     {{ partial "header.html" . }}
     <body>
 
@@ -20,9 +35,10 @@
                                 {{ partial "teammate.html" . }}
                             {{ else if .Params.image }}
                                 <header class="major"> 
-                                    <h1>{{ .Title}}</h1>
+                                    <h1>{{ .Title }}</h1>
                                 </header>
-                                <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" /></span>
+                                <div class="main1"><img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" /></span>
+                                </br>
                             {{ end }}
                             {{ .Content }}
                         </div>
